@@ -10,43 +10,88 @@
     </head>
     <body>
         <Header>
-            <h1>Project Explorer</h1> 
-            <h2>One Stop Database for Academic Projects</h2>
+            
         </Header>
-        <Navigation>
-            <a href ="index.html">Home</a>
-            <a href ="search.html">Projects</a>
-            <a href ="login.html">Login</a>
-            <a href ="register.html">Register</a>
-            <a href ="createproject.html">Submit</a>
-        </Navigation>
-        <Main>
-            <div class="Searchform" id="Searchform">
-                <h2>Search Project By</h2>
-                <form name="searchForm">
-                    <input type="text" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags"> <br><br>
-                    <label for="searchType">Search By:</label>
-                    <select id="searchType" name="searchType">
-                        <option value="Name">Name</option><br><br>
-                        <option value="Abstract">Abstract</option><br><br>
-                        <option value="Authors">Authors</option><br><br>
-                        <option value="Tags">Tags</option><br><br>
-                    </select><br><br>
-                    <input type="submit" value="Search">
-                </form>
+        <nav class="navbar bg-primary" >
+            <div class="container-fluid">
+                <div class="float-start .d-flex d-inline-flex">
+                    <div class="navbar-header">
+                        <a class="navbar-brand text-white" href ="index.html">Project Explorer</a>
+                    </div>
+                    <form class="navbar-form navbar-right form-inline" name="searchForm" action="search.html">
+                        <div class="form-group">
+                            <input class="form-control mr-sm-2" type="text" name="Search" placeholder="Search Projects">
+                        </div>
+                        <button class="border border-white btn btn-primary text-white" type="submit">Search</button>
+                    </form>
+                    <div>
+                        <a class="nav navbar-nav px-2 py-2" style="color:#D0D3D4;" href ="createproject.html">Submit</a>
+                    </div>
+                </div>
+                <div class="float-end">
+                    <ul class="nav navbar-nav navbar-left">
+                        <div class="d-flex .d-inline-flex justify-content-between">
+                            <div class="secondary-link px-2"><li><a href ="register.html" style="color:#D0D3D4">Sign up</a></li></div>
+                            <div class="secondary-link px-2"><li><a href ="login.html" style="color:#D0D3D4">Login</a></li></div>
+                        </div>
+                    </ul>
+                </div>
             </div>
-                <h2>Search Result</h2>
-            <div class="SearchResult" id="SearchResult"></div>
-                <h3>Project 1</h3>
-                <ul>
-                    <li>Name: Project 1</li>
-                    <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada.</li>
-                    <li>Program: Computer Science</li>
-                    <li>Authors: James Smith, Daniel Kirk</li>
-                    <li>Tags: #fujiasiui, #uueap</li>
-                    <li>Year: 2018</li>
-                </ul>
+        </nav>
+        <Main class="py-2 m-4">
+            <div class="mx-auto w-75">
+                <h2 class="display-6 py-2">Project Gallery</h2>
+                <div class="p-3 bg-light">
+                    <div class="form-group form-row d-flex" name="Searchform">
+                        <div class=" " name="searchbar">
+                            <input class="form-control-lg " style="width: 1450px;" type="text" name="Searchbar" placeholder="Search project name, authors, abstract, tags">
+                        </div>
+                        <div class="ml-3 d-inline-flex">
+                            <label class="form-label-lg form-control-lg border rounded-left" for="searchType">Search by</label>
+                            <select class="form-control-lg" name="searchType">
+                                <option selected>Name</option>
+                                <option value="Name">Name</option>
+                                <option value="Abstract">Abstract</option>
+                                <option value="Authors">Authors</option>
+                                <option value="Tags">Tags</option>
+                            </select>
+                            <button class="btn-lg btn-primary form-control-lg ml-2" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <h5><span>All Projects </span><span class="text-muted">(0 results)</span></h5>
+                <div class="d-flex .d-inline-flex">
+                    <div class="card" style="width: 18rem">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Project Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="text text-primary">#html</a>
+                                <a href="#" class="text text-primary">#css</a>
+                                <a href="#" class="text text-primary">#javascript</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ml-2" style="width: 18rem">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Project Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="text text-primary">#html</a>
+                                <a href="#" class="text text-primary">#css</a>
+                                <a href="#" class="text text-primary">#javascript</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </Main>
+        <footer>
+            <div class="copyright p-2 mt-3 mb-3 d-flex justify-content-end" style="background-color:#F8F9F9">
+                <p> <span class="text-muted">Project Explorer &copy; 2020 &centerdot; </span><span class="text-black">Edconnect</span></p>
+            </div>
+        </footer>
     </body>
 </html>

@@ -13,89 +13,97 @@
             <!-- <h1 class="text-primary">Project Explorer</h1> 
             <h2>One Stop Database for Academic Projects</h2> -->
         </Header>
-        <nav class="navbar navbar-inverse .bg-primary">
+        <nav class="navbar bg-primary" >
             <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href ="index.html">Project Explorer</a>
-                </div>
-                <form class="navbar-form form-inline" action="search.html">
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="Search" placeholder="Search Projects">
+                <div class="float-start .d-flex d-inline-flex">
+                    <div class="navbar-header">
+                        <a class="navbar-brand text-white" href ="index.html">Project Explorer</a>
                     </div>
-                    <button type="submit" class="btn btn-primary">Search</button>
-                </form>
-                <div>
-                    <a href ="createproject.html">Submit</a>
+                    <form class="navbar-form navbar-right form-inline" name="searchForm" action="search.html">
+                        <div class="form-group">
+                            <input class="form-control mr-sm-2" type="text" name="Search" placeholder="Search Projects">
+                        </div>
+                        <button class="border border-white btn btn-primary text-white" type="submit">Search</button>
+                    </form>
+                    <div>
+                        <a class="nav navbar-nav px-2 py-2" style="color:#D0D3D4;" href ="createproject.html">Submit</a>
+                    </div>
                 </div>
-                <ul class="nav navbar-nav d-flex .d-inline-flex justify-content-end">
-                    <li><a href ="register.html">Sign up</a></li>
-                    <li><a href ="login.html">Login</a></li>
-                </ul>
+                <div class="float-end">
+                    <ul class="nav navbar-nav navbar-left">
+                        <div class="d-flex .d-inline-flex justify-content-between">
+                            <div class="secondary-link px-2"><li><a href ="register.html" style="color:#D0D3D4">Sign up</a></li></div>
+                            <div class="secondary-link px-2"><li><a href ="login.html" style="color:#D0D3D4">Login</a></li></div>
+                        </div>
+                    </ul>
+                </div>
             </div>
-        </nav> <br>
+        </nav>
         <Main>
-            <div class="jumbotron justify-content-around">
-                <h1 class="display-4">Welcome to Project Explorer</h1>
-                <p class="lead">Project Explorer is a repository for finak year projects across all departments at your institution. You can submit your project and search projects submitted by others to learn from.</p>
-                <a class="btn btn-primary btn-default" href ="register.html" role="button">Get Started</a>
-                <a class="btn btn-secondary btn-default" href ="login.html" role="Login">Login</a>
+            <div class=" mx-auto p-4 w-75">
+                <div class="jumbotron justify-content-around">
+                    <h1 class="display-4">Welcome to Project Explorer</h1>
+                    <p class="lead">Project Explorer is a repository for final year projects across all departments at your institution. You can submit your project and search projects submitted by others to learn from.</p>
+                    <a class="btn btn-primary btn-default" href ="register.html" role="button">Get Started</a>
+                    <a class="btn btn-secondary btn-default" href ="login.html" role="Login">Login</a>
+                </div>
+                <div class="d-flex .d-inline-flex justify-content-around">
+                    <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-2" style="width: 18rem">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Project Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="text text-primary">#html</a>
+                                <a href="#" class="text text-primary">#css</a>
+                                <a href="#" class="text text-primary">#javascript</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-2" style="width: 18rem">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary" >Project Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="text text-primary">#html</a>
+                                <a href="#" class="text text-primary">#css</a>
+                                <a href="#" class="text text-primary">#javascript</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-2" style="width: 18rem">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Project Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="text text-primary">#html</a>
+                                <a href="#" class="text text-primary">#css</a>
+                                <a href="#" class="text text-primary">#javascript</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-2" style="width: 18rem">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Project Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="text text-primary">#html</a>
+                                <a href="#" class="text text-primary">#css</a>
+                                <a href="#" class="text text-primary">#javascript</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-            <div class="d-flex .d-inline-flex justify-content-around">
-                <div class="card" style="width: 18rem">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary">Project Title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <div class="d-flex justify-content-between">
-                            <a href="#" class="text text-primary">#html</a>
-                            <a href="#" class="text text-primary">#css</a>
-                            <a href="#" class="text text-primary">#javascript</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary" >Project Title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <div class="d-flex justify-content-between">
-                            <a href="#" class="text text-primary">#html</a>
-                            <a href="#" class="text text-primary">#css</a>
-                            <a href="#" class="text text-primary">#javascript</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary">Project Title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <div class="d-flex justify-content-between">
-                            <a href="#" class="text text-primary">#html</a>
-                            <a href="#" class="text text-primary">#css</a>
-                            <a href="#" class="text text-primary">#javascript</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary">Project Title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <div class="d-flex justify-content-between">
-                            <a href="#" class="text text-primary">#html</a>
-                            <a href="#" class="text text-primary">#css</a>
-                            <a href="#" class="text text-primary">#javascript</a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <footer>
-                <div class="copyright d-flex justify-content-end">
-                    <p class="mt-5 mb-3 text-muted">Project Explorer &copy; 2021 - Edconnect</p>
-                </div>
-            </footer>
         </Main>
+        <footer>
+            <div class="copyright p-2 d-flex justify-content-end" style="background-color:#F8F9F9">
+                <p> <span class="text-muted">Project Explorer &copy; 2020 &centerdot; </span><span class="text-black">Edconnect</span></p>
+            </div>
+        </footer>
     </body>
 </html>

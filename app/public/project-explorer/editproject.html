@@ -10,41 +10,88 @@
     </head>
     <body>
         <Header>
-            <h1>Project Explorer</h1> 
-            <h2>One Stop Database for Academic Projects</h2>
+            
         </Header>
-        <Navigation>
-            <a href ="index.html">Home</a>
-            <a href ="search.html">Projects</a>
-            <a href ="login.html">Login</a>
-            <a href ="register.html">Register</a>
-            <a href ="createproject.html">Submit</a>
-        </Navigation>
-        <Main>
-            <div class="ProjectDetails" id="ProjectDetails">
-                <h2>Project 1</h2>
-                <ul>
-                    <li>Created by: James Smith</li>
-                    <li>Date Created: 00/00/0000</li>
-                    <li>Last Updated: 01/01/0001</li>
-                </ul>
+        <nav class="navbar bg-primary" >
+            <div class="container-fluid">
+                <div class="float-start .d-flex d-inline-flex">
+                    <div class="navbar-header">
+                        <a class="navbar-brand text-white" href ="index.html">Project Explorer</a>
+                    </div>
+                    <form class="navbar-form navbar-right form-inline" name="searchForm" action="search.html">
+                        <div class="form-group">
+                            <input class="form-control mr-sm-2" type="text" name="Search" placeholder="Search Projects">
+                        </div>
+                        <button class="border border-white btn btn-primary text-white" type="submit">Search</button>
+                    </form>
+                    <div>
+                        <a class="nav navbar-nav px-2 py-2" style="color:#D0D3D4;" href ="createproject.html">Submit</a>
+                    </div>
+                </div>
+                <div class="float-end">
+                    <ul class="nav navbar-nav navbar-left">
+                        <div class="d-flex .d-inline-flex justify-content-between">
+                            <div class="secondary-link px-2"><li><a href ="register.html" style="color:#D0D3D4">Sign up</a></li></div>
+                            <div class="secondary-link px-2"><li><a href ="login.html" style="color:#D0D3D4">Login</a></li></div>
+                        </div>
+                    </ul>
+                </div>
             </div>
-            <div class="Editform" id="Editform">
-                <h2>Edit Project</h2>
-                <form>
-                    <label for="name">Project Name:</label><br>
-                    <input type="text" name="name"><br><br>
-                    <label for="abstract">Project Abstract:</label><br>
-                    <textarea name="abstract"></textarea><br /><br />
-                    <label for="authors">Authors:</label><br>
-                    <input type="text" id="authors" name="authors"><br><br>
-                    <label for="tags">Tag(s):</label><br>
-                    <input type="text" id="tags" name="tags"><br><br>
-                    <label for="projectFile">Upload File:</label><br>
-                    <input type="file" id="projectFile" name="projectFile"><br><br>
-                    <input type="submit" value="submit">
+        </nav>
+        <Main>
+            <div class="mx-auto py-3" style="width: 1400px;" name="Project Summary">
+                <h2 class="display-6 pt-4">Project 1</h2>
+                <div class="form-row d-flex bg-light py-3 pl-0 align-items:center w-140">
+                    <div class="col-md-3">
+                        <p><span>Created by: <br><span>James Smith</span></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><span>Date Created: <br></span> <span>00/00/0000</span></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><span>Last Updated: <br></span> <span>01/01/0001</span></p>
+                    </div>
+                    <div class="col-md-3 py-2 pr-2 pl-2 d-flex justify-content-end">
+                        <a class="secondary-link border rounded px-2 py-2 bg-primary text-white" href="viewproject.html">View Project</a>
+                    </div>
+                </div>
+                <form class="form-group form-row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <h4 class="display-6 border-bottom py-4">Edit Project:</h4><br>
+                        <label class="form-label h5" for="project_name">Project name:</label>
+                        <input class="form-control mb-3 py-3" type="text" name="project_name" placeholder="Project 1">
+                        <label class="form-label h5" for="abstract">Project Abstract:</label>
+                        <textarea class="form-control mb-3" name="abstract" rows="8" placeholder="Project 1 is a very interesting project"></textarea>
+                        <label class="form-label h5" for="authors">Author(s):</label>
+                        <input class="form-control mb-3" type="text" id="authors" name="authors" placeholder="Ade Chris">
+                        <label class="form-label h5" for="tags">Tag(s):</label>
+                        <input class="form-control mb-3" type="text" id="tags" name="tags" placeholder="#web">  
+                        <button class="btn btn-primary py-2" type="submit" value="submit">Save</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <h4 class="display-6 border-bottom py-4">Manage Project files:</h4>
+                        <div class="row py-2" style="width: 870px;">
+                            <div class="col-8">
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Click to open file browser</label>
+                              </div>
+                            </div>
+                          </div>                       
+                        <div class="border-top mt-2">
+                            <div class="card bg-light mt-3">
+                                <div class="card-header">Project files(s)</div>
+                                <div class="card-body d-flex justify-content-center align-items-center"><h5 class="card-title">No file uploaded yet</h5></div>
+                            </div>
+                        </div> 
+                    </div>                           
                 </form>
             </div>
         </Main>
+        <footer>
+            <div class="copyright p-2 mt-3 mb-3 d-flex justify-content-end" style="background-color:#F8F9F9">
+                <p> <span class="text-muted">Project Explorer &copy; 2020 &centerdot; </span><span class="text-black">Edconnect</span></p>
+            </div>
+        </footer>
     </body>
 </html>
