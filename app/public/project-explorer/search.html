@@ -18,9 +18,9 @@
                     <div class="navbar-header">
                         <a class="navbar-brand text-white" href ="index.html">Project Explorer</a>
                     </div>
-                    <form class="navbar-form navbar-right form-inline" name="searchForm" action="search.html">
+                    <form class="navbar-form navbar-right form-inline" name="navForm" action="search.html">
                         <div class="form-group">
-                            <input class="form-control mr-sm-2" type="text" name="Search" placeholder="Search Projects">
+                            <input class="form-control mr-sm-2" type="text" name="navSearch" placeholder="Search Projects">
                         </div>
                         <button class="btn border border-white btn-outline-light btn-primary text-white" type="submit">Search</button>
                     </form>
@@ -43,10 +43,10 @@
                 <h2 class="display-6 py-2">Project Gallery</h2>
                 <div class="p-3 bg-light">
                     <div class="form-group form-row d-flex">
-                        <input class="form-control form-control-lg" name='searchTerm' style="width: 1450px;" type="text" placeholder="Search project name, authors, abstract, tags">
+                        <input class="form-control form-control-lg" name="searchTerm" style="width: 1450px;" type="text" placeholder="Search project name, authors, abstract, tags">
                         <div class="ml-2 d-inline-flex">
                             <label class="form-label-lg form-control-lg border rounded-left pr-4 align-items-center" for="searchType">Search by</label>
-                            <select class="form-control-lg" name='searchTerm'>
+                            <select class="form-control-lg" name="searchType">
                                 <option selected>Name</option>
                                 <option value="Name">Name</option>
                                 <option value="Abstract">Abstract</option>
@@ -57,7 +57,9 @@
                         </div>
                     </div>
                 </div>
-                <h5><span>All Projects </span><span class="text-muted">(0 results)</span></h5>
+                <div class="mt-4">
+                    <h5>All Projects <small style="color:#D0D3D4;">(0 results)</small></h5>
+                </div>
                 <div class="d-flex .d-inline-flex">
                     <div class="card" style="width: 18rem">
                         <div class="card-body">
