@@ -10,34 +10,33 @@
     </head>
     <body>
         <Header>
-         
+            <nav class="navbar bg-primary" >
+                <div class="container-fluid">
+                    <div class="float-start .d-flex d-inline-flex">
+                        <div class="navbar-header">
+                            <a class="navbar-brand text-white" href ="index.html">Project Explorer</a>
+                        </div>
+                        <form class="navbar-form navbar-right form-inline" name="searchForm" action="search.html">
+                            <div class="form-group">
+                                <input class="form-control mr-sm-2" type="text" name="Search" placeholder="Search Projects">
+                            </div>
+                            <button class="btn border border-white btn-outline-light btn-primary text-white" type="submit">Search</button>
+                        </form>
+                        <div>
+                            <a class="nav navbar-nav px-2 py-2" style="color:#D0D3D4;" href ="createproject.html">Submit</a>
+                        </div>
+                    </div>
+                    <div class="float-end">
+                        <ul class="nav navbar-nav navbar-left">
+                            <div class="d-flex .d-inline-flex justify-content-between">
+                                <div class="secondary-link px-2"><li><a href ="register.html" style="color:#D0D3D4">Sign up</a></li></div>
+                                <div class="secondary-link px-2"><li><a href ="login.html" style="color:#D0D3D4">Login</a></li></div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </Header>
-        <nav class="navbar bg-primary" >
-            <div class="container-fluid">
-                <div class="float-start .d-flex d-inline-flex">
-                    <div class="navbar-header">
-                        <a class="navbar-brand text-white" href ="index.html">Project Explorer</a>
-                    </div>
-                    <form class="navbar-form navbar-right form-inline" name="searchForm" action="search.html">
-                        <div class="form-group">
-                            <input class="form-control mr-sm-2" type="text" name="Search" placeholder="Search Projects">
-                        </div>
-                        <button class="btn border border-white btn-outline-light btn-primary text-white" type="submit">Search</button>
-                    </form>
-                    <div>
-                        <a class="nav navbar-nav px-2 py-2" style="color:#D0D3D4;" href ="createproject.html">Submit</a>
-                    </div>
-                </div>
-                <div class="float-end">
-                    <ul class="nav navbar-nav navbar-left">
-                        <div class="d-flex .d-inline-flex justify-content-between">
-                            <div class="secondary-link px-2"><li><a href ="register.html" style="color:#D0D3D4">Sign up</a></li></div>
-                            <div class="secondary-link px-2"><li><a href ="login.html" style="color:#D0D3D4">Login</a></li></div>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </nav>
         <Main>
             <div class="mx-auto w-75">
                 <h3 class="display-6 mt-4">Signup</h3>
