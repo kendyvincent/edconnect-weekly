@@ -19,9 +19,9 @@ class User {
 
 class Users extends DataModel {
     authenticate(email, password) {
-        let auth_email = this.data.find(em_ps => em_ps.email === email);
-        let auth_password = this.data.find(em_ps => em_ps.password === password);
-        if ((auth_email) && (auth_password)) {
+        let auth_email = this.data.filter(em_ps => (em_ps.email === email));
+        let auth_pass = this.data.filter(em_ps => (em_ps.password === password));
+        if (auth_email[0] === auth_pass[0]) {
             return true;
         } 
         else {
