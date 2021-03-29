@@ -49,8 +49,8 @@ class DataModel {
 
     delete(id) {
         let gId = this.data.findIndex(info => info.id === id);
-        if (gId !== -1) {
-            this.data.splice(gId);
+        if (gId > -1) {
+            this.data.splice(gId, 1);
             return true;
         } else {
             return false;
