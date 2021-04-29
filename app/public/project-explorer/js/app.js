@@ -115,7 +115,7 @@ if (document.cookie) {
             document.getElementById("login").style.visibility = "hidden";
             // document.getElementById("loginBody").style.visibility = "hidden";
             document.getElementById("signup").style.visibility = "hidden";
-            let welcomeGreetn = document.getElementById('userGreeting');
+            let welcomeGreetn = document.getElementById('username');
             welcomeGreetn.innerHTML = `<b> Hi, ${response.firstname}<b>`
             document.getElementById("logout").style.display = "block";
             welcomeGreetn.style.display = "block";
