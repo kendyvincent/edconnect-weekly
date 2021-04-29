@@ -44,7 +44,7 @@ if (path.includes('register.html')) {
   
     document.addEventListener('DOMContentLoaded', () => {
         document
-        .getElementById('signupForm')
+        .getElementById('loginForm')
         .addEventListener('submit', handleForm);
     });
 
@@ -137,7 +137,7 @@ if (document.cookie) {
 if (path.includes('login.html')) {
     document.addEventListener('DOMContentLoaded', () => {
         document
-        .getElementById('signinForm')
+        .getElementById('loginForm')
         .addEventListener('submit', handleLoginForm);
     });
     let handleLoginForm = async function (ev) {
