@@ -44,7 +44,7 @@ if (path.includes('register.html')) {
   
     document.addEventListener('DOMContentLoaded', () => {
         document
-        .getElementById('loginForm')
+        .getElementById('signupForm')
         .addEventListener('submit', handleForm);
     });
 
