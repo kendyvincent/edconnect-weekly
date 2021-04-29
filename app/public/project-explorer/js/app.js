@@ -229,8 +229,21 @@ if (path.includes('login.html')) {
 
 if (path.includes('createproject.html')) {
     window.onload = function () {
-            let cookieCheck = document.cookie.split(';').some((item) => item.trim().startsWith('uid='));
-            if (!cookieCheck) {
+            function getCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                }
+                return null;
+            }
+        
+            let cookieVal = getCookie("uid");
+            let cookieAvailable = cookieVal ? true : false;
+            // let cookieCheck = document.cookie.split(';').some((item) => item.trim().startsWith('uid='));
+            if (!cookieAvailable) {
                 window.location.replace("login.html");
             }
             const createProjectForm = document.getElementById("createProjectForm"); // Get the form element that I will listen to
