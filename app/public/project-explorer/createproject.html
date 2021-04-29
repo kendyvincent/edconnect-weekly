@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    
+        <title>Project Explorer</title>
+    
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <Header>
+            <nav class="navbar bg-primary" >
+                <div class="container-fluid">
+                    <div class="float-start .d-flex d-inline-flex">
+                        <div class="navbar-header">
+                            <a class="navbar-brand text-white" href ="index.html">Project Explorer</a>
+                        </div>
+                        <form class="navbar-form navbar-right form-inline" name="searchForm" action="search.html">
+                            <div class="form-group">
+                                <input class="form-control mr-sm-2" type="text" name="search" placeholder="Search Projects">
+                            </div>
+                            <button class="btn border border-white btn-outline-light btn-primary text-white" type="submit">Search</button>
+                        </form>
+                        <div>
+                            <a class="nav navbar-nav px-2 py-2" style="color:#D0D3D4;" href ="createproject.html">Submit</a>
+                        </div>
+                    </div>
+                    <div class="float-end">
+                        <ul class="nav navbar-nav navbar-left">
+                            <div class="d-flex .d-inline-flex justify-content-between">
+                                <div class="secondary-link px-2"><li><a href ="register.html" style="display: block; color:#D0D3D4" id="signup">Sign up</a></li></div>
+                                <div class="secondary-link px-2"><li><a href ="login.html" style="display: block; color:#D0D3D4" id="login" name="login">Login</a></li></div>
+                                <div class="secondary-link px-2" id="logout" style="display: none;"><li><a href = "index.html" style="color:#D0D3D4">Logout</a></li></div>
+                                <div class="greeting" style="display: none; color: #D0D3D4;" id="userGreeting"></div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </Header>
+        <Main>
+            <form class="form-group mx-auto w-50" id="createProjectForm">
+                <h2 class="display-6 pt-4">Submit Project</h2>
+                <div class="alert alert-danger py-2" id="projectErrDiv" style="display: none;"></div>
+                <label class="form-label" for="name">Project Name</label><br>
+                <input class="form-control" type="text" name="name" placeholder="Enter project name"><br>
+                <label class="form-label" for="abstract">Project Abstract</label><br>
+                <textarea class="form-control" name="abstract" rows="7"></textarea><br/>
+                <label class="form-label" for="authors">Authors:</label><br>
+                <input class="form-control" type="text" name="authors" placeholder="Enter author names (seperated by comma)"><br>
+                <label class="form-label" for="tags">Tag(s):</label><br>
+                <input class="form-control" type="text" name="tags" placeholder="Use # to tag project with different topic (e.g. #javascript #mongodb)"><br>
+                <button class="btn btn-primary" type="submit">Continue</button>
+            </form>
+        </Main>
+        <footer>
+            <div class="copyright p-2 mt-3 mb-3 d-flex justify-content-end" style="background-color:#F8F9F9">
+                <p> <span class="text-muted">Project Explorer &copy; 2020 &centerdot; </span><span class="text-black">Edconnect</span></p>
+            </div>
+        </footer>
+        <script src="js/app.js"></script>
+    </body>
+</html>
